@@ -1,0 +1,48 @@
+.instagram-section{
+   width: 100vw;
+   overflow: hidden;
+   padding-inline: 3rem;
+   @include breakpoint(S){
+      padding-inline: unset;
+      margin-top: 3rem;
+   }
+   .instagram-container{
+      flex-direction: column;
+
+      .instagram-header{
+         display: flex;
+         flex-direction: column;
+         gap: .75rem;
+         text-align: center;
+      }
+   }
+}
+@include breakpoint(S){
+   #sb_instagram.sbi_tab_col_2 #sbi_images{
+      display: flex;
+      overflow: scroll;
+      scroll-snap-type: x proximity;
+      justify-content: unset;
+      width: 100vw;
+      .sbi_item{
+         scroll-snap-align: center;
+         overflow: unset;
+         .sbi_photo_wrap{
+            width: 20rem;
+            height: 20rem;
+   
+            .sbi_photo{
+               height: 100% !important;
+               .sbi_playbtn{
+                  display: none !important;
+               }
+            }
+         }
+      }
+   
+   }
+}
+
+#sb_instagram.sbi_tab_col_2 #sbi_images .sbi_photo .sbi_playbtn{
+   display: none !important;
+}

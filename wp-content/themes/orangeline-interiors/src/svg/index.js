@@ -1,0 +1,12 @@
+export { default as Check } from './Check';
+export { default as Cross } from './cross';
+export { default as Give } from './give';
+export { default as Volunteer } from './volunteer';
+export { default as Help } from './help';
+export { default as Email } from './email';
+export { default as Location } from './location';
+export { default as Phone } from './phone';
+export { default as Chair } from './chair';
+export { default as Bulb } from './bulb';
+export { default as Palette } from './palette';
+export { default as Model } from './model';

@@ -1,0 +1,59 @@
+
+
+/* abhaya-libre-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/wp-content/themes/orangeline-interiors/assets/fonts/abhaya/abhaya-libre-v17-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/wp-content/themes/orangeline-interiors/assets/fonts/abhaya/abhaya-libre-v17-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/wp-content/themes/orangeline-interiors/assets/fonts/abhaya/abhaya-libre-v17-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/wp-content/themes/orangeline-interiors/assets/fonts/abhaya/abhaya-libre-v17-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/wp-content/themes/orangeline-interiors/assets/fonts/abhaya/abhaya-libre-v17-latin-800.woff2') format('woff2');
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/wp-content/themes/orangeline-interiors/assets/fonts/poppins/poppins-v21-latin-regular.woff2') format('woff2');
+}
+/* poppins-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/wp-content/themes/orangeline-interiors/assets/fonts/poppins/poppins-v21-latin-italic.woff2') format('woff2');
+}

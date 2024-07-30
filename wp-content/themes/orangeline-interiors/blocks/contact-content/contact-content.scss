@@ -1,0 +1,216 @@
+.contact-content-section.pd-block{
+   width: 85%;
+   margin: auto;
+   align-self: center;
+   display: flex;
+   justify-content: space-between;
+   row-gap: 2rem;
+   @include breakpoint(S){
+      width: 100%;
+      padding-top: 2rem;
+      flex-direction: column;
+   }
+   .contact-content-content{
+      width: 50%;
+      max-width: 25rem;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      @include breakpoint(S){
+         width: 100%;
+      }
+   }
+
+   .contact-content-container{
+      width: 50%;
+      @include breakpoint(S){
+         width: 100%;
+      }
+      .wpcf7 {
+         width: 100%;
+         @include breakpoint(S){
+            width: 100%;
+         }
+         .wpcf7-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            input, textarea{
+               border: none;
+               outline: none;
+               border-bottom: 1px solid #333;
+               width: 100%;
+               color: #000;
+               background: transparent;
+            }
+            .form-field {
+               
+               p{
+                  display: flex;
+                  gap: 1rem;
+                  label{
+                     width: 100%;
+                     font-size: 0.75rem;
+                     color: #000;
+                     margin: 0;
+                     padding: .7rem 0 0 0 !important;
+                     font-weight: 500;
+                     line-height: 1.5;
+                     font-style: normal;
+                  }
+                 
+                  input{
+                     padding-bottom: .7rem;
+                     line-height: 1.5;
+                     height: auto;
+   
+                  }
+               }
+            }
+            .wpcf7-submit{
+               border: 1px solid;
+               cursor: pointer;
+               padding: 1rem;
+               height: auto;
+               color: #000;
+               transition: all .5s;
+               
+               &:hover{
+                   color: #fff;
+                   @include color(background-color, 'accent-primary');
+                   @include color(border-color, 'accent-primary');
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+// /* CONTACT */
+// // .contact {
+// //    background: rgba(0, 0, 0, 0.89);
+// //    color: white;
+// //    justify-content: space-between;
+// //    margin: 70px 0;
+// // }
+
+// .contact-page {
+//    background: #f0f4f7;
+//    color: #20303c;
+//    padding: 0 50px;
+// }
+
+// .contact-page .form-container label {
+//    color: #000;
+//    font-weight: 200;
+// }
+
+// .contact-page .form-container input,
+// .contact-page .form-container textarea {
+//    border-bottom: 1px solid #20303c;
+//    color: #000;
+// }
+
+// .contact-page .submit-btn {
+//    color: white;
+//    background: black;
+// }
+
+// .contact-page .submit-btn:hover {
+//    background: rgb(193, 66, 7);
+//    color: #fff;
+//    transition: border-color 0.5s, background-color 0.5s, color 0.5s
+// }
+
+// .contact-content {
+//    width: 50%;
+//    padding: 70px 80px;
+// }
+
+// .contact-head {
+//    padding-right: 80px;
+// }
+
+// .contact-form {
+//    width: 50%;
+//    padding: 100px 80px;
+// }
+
+// .form-flex-container {
+//    flex-flow: column;
+// }
+
+// .form-firstname,
+// .form-lastname,
+// .form-email,
+// .form-phone {
+//    display: flex;
+//    flex-flow: column;
+//    justify-content: space-between;
+//    width: 48%;
+//    margin: 5px 10px 5px 0;
+// }
+
+// input,
+// textarea {
+//    border: none;
+//    border-bottom: 1px solid white;
+//    background: none;
+//    color: white;
+//    outline: none;
+//    font-size: 15px;
+// }
+
+// input {
+//    height: 20px;
+// }
+
+// label {
+//    margin: 5px 0;
+// }
+
+// .form-full input,
+// textarea {
+//    width: 98%;
+//    margin: 5px 0;
+// }
+
+// .submit-btn {
+//    background: white;
+//    color: black;
+//    height: 50px;
+//    font-size: 14px;
+//    width: 100%;
+// }
+
+// .submit-btn:hover {
+//    color: orangered;
+// }
+
+// .form-container {
+//    color: white;
+// }
+
+// /* FOOTER */
+// footer {
+//    display: flex;
+//    justify-content: space-between;
+//    margin: auto;
+//    width: 50%;
+//    margin-top: -40px;
+//    padding: 30px 0;
+// }
+
+// .social-media a {
+//    font-size: 12px;
+//    padding: 9px !important;
+// }

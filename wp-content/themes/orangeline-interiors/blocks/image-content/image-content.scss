@@ -1,0 +1,47 @@
+.image-content-section{
+   align-self: center;
+
+   .image-content-container{
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      @include breakpoint(S){
+         gap: 2rem;
+         flex-wrap: wrap !important;
+      }
+
+      .image-content-img{
+         width: 50%;
+         max-width: 35rem;
+         aspect-ratio: 3/3;
+         @include breakpoint(S){
+            width: 100%;
+         }
+      }
+      .image-content-content{
+         width: 50%;
+         max-width: 30rem;
+         display: flex;
+         flex-direction: column;
+         gap: 2.5rem;
+         justify-content: center;
+         align-items: baseline;
+         @include breakpoint(S){
+            width: 100%;
+            text-align: center;
+            gap: 1.5rem;
+            align-items: center;
+         }
+         .heading-section{
+            .seprator{
+               left: unset;
+               transform: unset;
+            }
+         }
+
+         .h1{
+            font-size: 56px;
+         }
+      }
+   }
+}

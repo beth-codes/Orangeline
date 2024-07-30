@@ -1,0 +1,94 @@
+.column-content-section{
+   @include breakpoint(XS) {
+      width: 100vw;
+    }
+    &.remove-img{
+       background-color: white;
+      .column-countent-block .column-content-container {
+         background: transparent;
+         figure{
+            display: none;
+         }
+         .button-container{
+            display: none;
+         }
+      }
+
+    }
+    .column-countent-block {
+       display: flex;
+       width: 80%;
+       margin: auto;
+       .column-content-container{
+          width: calc(100% / 3);
+          text-align: center;
+          @include color(background-color, 'background-alt');
+          @include breakpoint(S){
+             width: 100%;
+          }
+          .content-heading{
+             font-size: 1.625rem;
+             letter-spacing: .2rem;
+             text-transform: uppercase;
+          }
+    
+          .content-img{
+             height: 30vh;
+          }
+          .content-text{
+             display: flex;
+             flex-direction: column;
+             gap: 2rem;
+             padding: 2rem;
+    
+          }
+          
+       }
+    
+    }
+}
+
+.mobile-scroll {
+   @media only screen and (max-width: 600px) {
+        overflow: scroll;
+        scroll-snap-type: x proximity;
+        flex-wrap: nowrap !important;
+        justify-content: unset;
+        align-items: unset;
+        // this stops the scroll bar from overlapping the items
+        padding-bottom: 1rem;
+        margin-bottom: -1rem;
+
+        .column-content-container {
+            flex-grow: unset;
+            flex-shrink: 0;
+            // margin: 0 1rem 0 0;
+            width: 18rem;
+         
+            @include breakpoint(XS) {
+               width: 100%;
+             }
+            scroll-snap-align: center;
+
+            &:first-child {
+                margin-left: 2rem;
+            }
+        }
+        .cta.compact {
+            width: calc(50% - 3rem - 1px);
+
+            &:first-child {
+                margin-left: 2.5rem;
+            }
+        }
+        &:after {
+            content:"";
+            padding-right: 1rem;
+        }
+        [data-aos^=fade][data-aos^=fade] {
+            transform: none !important;
+        }
+    }
+}
+
+

@@ -1,0 +1,188 @@
+// .button .wp-block-button__link{
+
+//       border: 0;
+//       border-radius: 0;
+//       background: rgba(0, 0, 0, 0);
+//       appearance: none;
+//       cursor: pointer;
+//       width: auto;
+//       display: inline-block;
+//       position: relative;
+//       text-align: center;
+//       z-index: 1;
+//       font-weight: 500;
+//       font-size: .875rem;
+//       letter-spacing: .125em;
+//       text-transform: uppercase;
+//       color: black;
+//       border: 1px solid;
+//       border-color: rgba(25, 54, 74, .5);
+//       padding: calc(.667em + 2px) calc(1.333em + 2px);
+//       transition: all .5s ease-in-out;
+
+//       &:hover,
+//       .button.active,
+//       input[type="submit"]:hover,
+//       input[type="submit"].active,
+//       input[type="button"]:hover,
+//       input[type="button"].active {
+//          color: #fff;
+//          box-shadow: inset 0 0 0 2em var(--color-accent-primary);
+//           @include color(background-color, 'accent-primary');
+//          @include color(border-color, 'accent-primary');
+//              transition: all .5s ease-in-out
+
+//    }
+
+// }
+.button-container, .button {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   justify-content: center;
+   padding-block: 2.125rem;
+
+   .button, .wp-block-button__link {
+      border: 0;
+      border-radius: 0;
+      background: rgba(0, 0, 0, 0);
+      appearance: none;
+      cursor: pointer;
+      width: auto;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      z-index: 1;
+      font-weight: 500;
+      font-size: .875rem;
+      letter-spacing: .125em;
+      text-transform: uppercase;
+      color: black;
+      border: 1px solid;
+      border-color: rgba(25, 54, 74, .5);
+      padding: calc(.667em + 2px) calc(1.333em + 2px);
+      transition: all .5s ease-in-out;
+
+      &:hover,
+      .button.active,
+      input[type="submit"]:hover,
+      input[type="submit"].active,
+      input[type="button"]:hover,
+      input[type="button"].active {
+         color: #fff;
+         @include color(background-color, 'accent-primary');
+         @include color(border-color, 'accent-primary');
+
+      }
+   }
+
+}
+
+.blog-button {
+   border: 0;
+   border-radius: 0;
+   background: rgba(0, 0, 0, 0);
+   appearance: none;
+   cursor: pointer;
+   width: auto;
+   display: inline-block;
+   position: relative;
+   text-align: center;
+   z-index: 1;
+   font-weight: 500;
+   font-size: .875rem;
+   letter-spacing: .125em;
+   text-transform: uppercase;
+   color: black;
+   border: 1px solid;
+   border-color: rgba(25, 54, 74, .5);
+   padding: 0.75rem;
+
+   &:hover,
+   .button.active,
+   input[type="submit"]:hover,
+   input[type="submit"].active,
+   input[type="button"]:hover,
+   input[type="button"].active {
+      color: #fff;
+      @include color(background-color, 'accent-primary');
+      @include color(border-color, 'accent-primary');
+
+   }
+
+}
+
+
+.test {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   width: auto;
+   height: 150px;
+   background: linear-gradient(#e97e7e 25%, #3bcee5 75%);
+   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+   color: white;
+   box-shadow: 20px 20px rgba(0, 0, 0, .15);
+   transition: color .8s ease, border-radius .8s ease, box-shadow .8s ease; /* Updated transition properties */
+   margin: 15px;
+}
+
+.test1:hover .description {
+   display: block;
+   pointer-events: none;
+}
+
+.test:hover {
+   border-radius: 0% 0% 90% 90% / 0% 0% 45% 45%;
+   box-shadow: 10px 10px rgba(0, 0, 0, .25);
+   width: auto;
+   height: 450px;
+   display: flex;
+   justify-content: center;
+   align-items: normal;
+}
+
+.description {
+   display: none;
+   position: relative;
+   bottom: 400px;
+   left: 0;
+   width: 90%;
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   text-align: center;
+   pointer-events: none;
+}
+
+
+ 
+
+.button.icon {
+   height: 2.8333rem;
+   width: 2.8333rem;
+   border: 1px solid;
+   color: white;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   padding: unset;
+   background-color: unset;
+
+   &:hover{
+      opacity: .5;
+   }
+}
+
+.cta-block .block-list-appender.wp-block {
+   display: flex;
+   justify-content: flex-end;
+   align-self: end;
+   .block-editor-button-block-appender.components-button{
+      width: 2rem;
+      height: 2rem;
+      padding: unset;
+   }
+}

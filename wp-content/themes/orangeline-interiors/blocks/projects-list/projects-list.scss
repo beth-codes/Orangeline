@@ -1,0 +1,59 @@
+      //event list style
+      .projects-page{
+        margin-top: 10rem;
+        padding-inline: 4rem;
+        .wp-block-query .project-list-section{
+        gap: 1rem;
+
+          li{
+            width: 49%;
+          }
+        }
+      }
+        .project-list-section{
+           display: flex;
+           width: 100%;
+           flex-wrap: wrap;
+           gap: unset;
+           justify-content: space-between;
+
+           li{
+              width: calc(100% / 3 - .4rem);
+              padding: unset;
+              position: relative;
+              align-items: normal;
+
+              @include breakpoint(S){
+                width: 100%;
+             }
+              
+              h2{
+                position: absolute !important;
+                top: 0;
+                left: 0;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                color: white;
+                background: rgba(0, 0, 0, 0.5);
+                font-size: 3rem;
+                justify-content: center;
+                visibility: visible;
+                opacity: 1;
+              }
+
+              &:hover{
+                h2{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .5s;
+                }
+              }
+
+              figure{
+                max-height: 43rem;
+                height: 100%;
+              }
+           }
+        }
